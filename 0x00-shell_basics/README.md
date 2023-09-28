@@ -13,3 +13,5 @@ The 5-listfilesdigitonly script displays current directory including hidden file
 The 6-firstdirectory creates a directory in the /tmp directory.
 
 The 7-movethatfile script moves betty into a specified directory.
+
+The 8-firstdelete script deletes betty from the specified folder.
