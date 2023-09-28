@@ -15,3 +15,5 @@ The 6-firstdirectory creates a directory in the /tmp directory.
 The 7-movethatfile script moves betty into a specified directory.
 
 The 8-firstdelete script deletes betty from the specified folder.
+
+The 9-firstdirdeletion script deletes a directory in the /tmp directory.
