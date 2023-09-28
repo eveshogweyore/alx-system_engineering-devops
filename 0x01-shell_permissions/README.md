@@ -4,4 +4,6 @@ The 1-whoami script prints the effective username of the current user.
 
 The 2-groups script prints all the groups the current user is a part of.
 
+The 3-newowner script changes file ownership for the hello file.
+
 
