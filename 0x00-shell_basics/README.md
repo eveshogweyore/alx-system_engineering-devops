@@ -10,4 +10,6 @@ The 4-listmorefiles script displays the current directory's contents, including 
 
 The 5-listfilesdigitonly script displays current directory including hidden files in numerical order.
 
-The 6-firstdirectory creates a directory in the /tmp directory
+The 6-firstdirectory creates a directory in the /tmp directory.
+
+The 7-movethatfile script moves betty into a specified directory.
