@@ -7,3 +7,5 @@ The 2-bringmehome script changes the working directory to the home directory.
 The 3-listfile displays the current directory in long format.
 
 The 4-listmorefiles script displays the current directory's contents, including hidden files, in long format.
+
+The 5-listfilesdigitonly script displays current directory including hidden files in numerical order.
