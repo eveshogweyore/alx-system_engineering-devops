@@ -10,4 +10,6 @@ The 4-empty script creates an empty hello file.
 
 The 5-execute script adds execute permission to the hello file.
 
+The 6-multiplepermissions script modifies execute permissions for the hello file.
+
 
