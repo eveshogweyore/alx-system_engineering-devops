@@ -2,4 +2,6 @@ The 0-iambetty script switches the current user to betty.
 
 The 1-whoami script prints the effective username of the current user.
 
+The 2-groups script prints all the groups the current user is a part of.
+
 
