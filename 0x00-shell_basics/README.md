@@ -23,3 +23,7 @@ The 10-back script changes a working directory to the previous one.
 The 11-lists script lists file in the following directories "., .. and /boot".
 
 The 12-filetype script prints the type of file for a specified file.
+
+The 13-symboliclink script creates a symbolic link in the /bin/ls file
+
+The 14-copyhtml script copies all HTML files to parent directory 
