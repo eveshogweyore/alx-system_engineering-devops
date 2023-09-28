@@ -8,4 +8,6 @@ The 3-newowner script changes file ownership for the hello file.
 
 The 4-empty script creates an empty hello file.
 
+The 5-execute script adds execute permission to the hello file.
+
 
