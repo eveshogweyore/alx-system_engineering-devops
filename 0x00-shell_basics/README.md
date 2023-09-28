@@ -19,3 +19,5 @@ The 8-firstdelete script deletes betty from the specified folder.
 The 9-firstdirdeletion script deletes a directory in the /tmp directory.
 
 The 10-back script changes a working directory to the previous one.
+
+The 11-lists script lists file in the following directories "., .. and /boot"
