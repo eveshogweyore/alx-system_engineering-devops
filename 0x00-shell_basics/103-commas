@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Fma | echo -e "$(cat -)\n"
+ls -Fma
