@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # Script that displays "Bash School" 10 times.
-# Displays Hi on the 9th iteration.
 
 i=1
 
