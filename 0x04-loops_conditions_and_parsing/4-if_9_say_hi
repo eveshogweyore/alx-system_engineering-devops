@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Script that displays "Bash School" 10 times.
 
 i=1
