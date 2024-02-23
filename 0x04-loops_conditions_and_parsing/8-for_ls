@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script to display content of current directory in list format.
+
+dir_list=$( ls ./ )
+
+for content in $dir_list
+do
+	echo "${content#*-}"
+done
