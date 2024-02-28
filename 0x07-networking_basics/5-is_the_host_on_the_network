@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script pings an IP addrss passed as an argument.
+ping $1
