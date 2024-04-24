@@ -10,4 +10,4 @@ service nginx restart
 
 apt-get install curl -y
 
-echo "Hello World!" > /var/www/html/index.html
+echo "Hello Worild!" | sudo tee /var/www/html/index.html
