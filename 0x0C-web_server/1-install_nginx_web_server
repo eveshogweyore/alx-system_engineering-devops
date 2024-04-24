@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 # Install nginx on server.
 
-apt-get update -y
+sudo apt-get update -y
 
-apt-get install nginx -y
-ufw allow 'Nginx HTTP'
+sudo apt-get install nginx -y
+sudo ufw allow 'Nginx HTTP'
 
-service nginx restart
+sudo service nginx restart
 
-apt-get install curl -y
-
-echo "Hello Worild!" | sudo tee /var/www/html/index.html
+sudo echo "Hello Worild!" | sudo tee /var/www/html/index.html
