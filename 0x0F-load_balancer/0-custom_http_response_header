@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Install Nginx and customize HTTP response header.
+
+#!/usr/bin/env bash
+# Install nginx on server.
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+sudo sed -i '/http {/ {a\
+\tadd_header X-Served-By "web-01";
+}' /etc/nginx/nginx.conf
+
+sudo service nginx restart
