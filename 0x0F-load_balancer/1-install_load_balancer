@@ -17,4 +17,4 @@ sudo sed -i '$a\\tbalance roundrobin' /etc/haproxy/haproxy.cfg
 sudo sed -i '$a\\tserver 530728-web-01 54.209.176.26:80 check' /etc/haproxy/haproxy.cfg
 sudo sed -i '$a\\tserver 530728-web-02 34.201.165.117:80 check' /etc/haproxy/haproxy.cfg
 
-sudo systemctl restart haproxy
+sudo service haproxy restart
