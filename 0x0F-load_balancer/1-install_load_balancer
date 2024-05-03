@@ -9,7 +9,7 @@ sudo systemctl enable haproxy
 
 sudo sed -i '$a\\nfrontend webservers' /etc/haproxy/haproxy.cfg
 sudo sed -i '$a\\tbind *:80' /etc/haproxy/haproxy.cfg
-sudo sed -i '$a\\tmode http' /etc/haproxy/haproxy.cfg
+sudo sed -i '$a\\option httpclose' /etc/haproxy/haproxy.cfg
 sudo sed -i '$a\\tdefault_backend servers' /etc/haproxy/haproxy.cfg
 
 sudo sed -i '$a\\nbackend servers' /etc/haproxy/haproxy.cfg
