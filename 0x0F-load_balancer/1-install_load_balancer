@@ -4,14 +4,14 @@
 sudo apt-get update -y
 sudo apt-get install --no-install-recommends software-properties-common -y
 sudo add-apt-repository ppa:vbernat/haproxy-2.8 -y
-sudo apt-get install haproxy=2.8 -y
+sudo apt-get install haproxy -y
 
 # sudo systemctl enable haproxy
 
 sudo sed -i '$a\\nfrontend webservers' /etc/haproxy/haproxy.cfg
 sudo sed -i '$a\\tbind *:80' /etc/haproxy/haproxy.cfg
-sudo sed -i '$a\\option httpclose' /etc/haproxy/haproxy.cfg
-sudo sed -i '$a\\option forwardfor' /etc/haproxy/haproxy.cfg
+sudo sed -i '$a\\toption httpclose' /etc/haproxy/haproxy.cfg
+sudo sed -i '$a\\toption forwardfor' /etc/haproxy/haproxy.cfg
 sudo sed -i '$a\\tdefault_backend servers' /etc/haproxy/haproxy.cfg
 
 sudo sed -i '$a\\nbackend servers' /etc/haproxy/haproxy.cfg
@@ -19,6 +19,6 @@ sudo sed -i '$a\\tbalance roundrobin' /etc/haproxy/haproxy.cfg
 sudo sed -i '$a\\tserver 530728-web-01 54.209.176.26:80 check' /etc/haproxy/haproxy.cfg
 sudo sed -i '$a\\tserver 530728-web-02 34.201.165.117:80 check' /etc/haproxy/haproxy.cfg
 
-sudo bash -c 'echo "ENABLED=1" > /etc/default/haproxy'
+sudo bash -c 'echo "ENABLED=1" >> /etc/default/haproxy'
 
 sudo service haproxy restart
