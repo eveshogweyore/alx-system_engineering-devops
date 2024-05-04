@@ -4,11 +4,11 @@
 sudo apt update
 sudo apt install nginx -y
 
-CONFIG="
-server {
-	listen 0.0.0.0:80
-}
-"
-sudo bash -c "echo \"$CONFIG\" >> /etc/nginx/nginx.conf"
+# CONFIG="
+# server {
+#       listen 0.0.0.0:80
+# }
+# "
+# sudo bash -c "echo \"$CONFIG\" >> /etc/nginx/nginx.conf"
 
 sudo service nginx start
