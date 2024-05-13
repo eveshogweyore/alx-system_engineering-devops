@@ -7,5 +7,6 @@ if ! type -P ufw; then
 fi
 
 sudo ufw enable
+sudo ufw default deny incoming
 sudo ufw allow 22,443,80/tcp
 sudo ufw reload
