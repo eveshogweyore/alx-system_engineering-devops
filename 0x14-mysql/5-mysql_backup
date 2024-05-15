@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# MySQL Backup.
+
+if [ "$#" -ne 1 ]; then
+	printf "%s\n" "USAGE: $0 <DB_USER>"
+	exit 1
+fi
+
+current_date="$(date +'%d-%m-%Y')"
+
+sudo mysqldump -uroot -p"$1" --all-databases > mysql.sql
+
+# Compress sql database.
+tar -czvf "$current_date".tar.gz mysql.sql
