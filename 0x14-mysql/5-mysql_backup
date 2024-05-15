@@ -9,7 +9,7 @@ fi
 current_date="$(date +'%d-%m-%Y')"
 
 #sudo mysqldump -uroot -p"$1" tyrell_corp > mysql.sql
-sudo mysqldump -uroot -p"$1" --all-databases > mysql.sql
+sudo mysqldump -uroot -p"$1" --all-databases > backup.sql
 
 # Compress sql database.
 tar -czvf "$current_date".tar.gz mysql.sql
