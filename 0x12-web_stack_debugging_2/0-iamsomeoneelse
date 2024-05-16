@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Run software as another user
+
+if [ "$#" -ne 1 ]; then
+	printf "%s\n" "USAGE: $0 <username>"
+	exit 1
+fi
+
+if ! id "$1" &>/dev/null; then
+	printf "%s\n" "User [$1] is not a valid privileged user."
+	exit 2
+fi
+
+sudo -u "$1" whoami
