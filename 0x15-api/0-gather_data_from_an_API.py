@@ -20,6 +20,7 @@ if __name__ == "__main__":
         if record["completed"]:
             refined_todos.append(record)
 
+    emp_name = ''
     for emp in response_users:
         if emp["id"] == int(argv[1]):
             emp_name = emp["name"]
@@ -28,6 +29,7 @@ if __name__ == "__main__":
     a = len(refined_todos)
     b = len(response_todos)
 
-    print(f"Employee {emp_name} is done with tasks ({a}/{b})")
-    for record in refined_todos:
-        print(f"\t {record['title']}")
+    if len(emp_name) > 0:
+        print(f"Employee {emp_name} is done with tasks ({a}/{b})")
+        for record in refined_todos:
+            print(f"\t {record['title']}")
