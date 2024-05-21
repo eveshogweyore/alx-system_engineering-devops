@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ First use of REST API. """
 
+import csv
 import requests
 from sys import argv
-import csv
 
 if __name__ == "__main__":
     todos_url = f"https://jsonplaceholder.typicode.com/users/{argv[1]}/todos"
