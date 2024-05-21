@@ -30,6 +30,6 @@ if __name__ == "__main__":
     b = len(response_todos)
 
     if len(emp_name) > 0:
-        print(f"Employee {emp_name} is done with tasks ({a}/{b}):")
+        print(f"Employee {emp_name} is done with tasks({a}/{b}):")
         for record in refined_todos:
             print(f"\t {record['title']}")
