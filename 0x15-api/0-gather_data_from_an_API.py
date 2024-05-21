@@ -17,14 +17,14 @@ if __name__ == "__main__":
     refined_todos = []
 
     for record in response_todos:
-        if record["completed"] == True:
+        if record["completed"]:
             refined_todos.append(record)
 
     for emp in response_users:
         if emp["id"] == int(argv[1]):
             emp_name = emp["name"]
             break
-    
+
     a = len(refined_todos)
     b = len(response_todos)
 
